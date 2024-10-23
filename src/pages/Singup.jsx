@@ -28,6 +28,7 @@ const Register = () => {
                 <div className="row">
                     <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
                         <div className="card border-1 shadow rounded-5 my-5">
+                            <Link to='/' className="close"><i className="bi bi-x-lg"></i></Link>
                             <div className="card-body p-4 p-sm-5">
                                 <h2 className="card-title text-center mb-5 fw-light fs-5">Sign Up</h2>
                                     <form onSubmit={handleSubmit}>
