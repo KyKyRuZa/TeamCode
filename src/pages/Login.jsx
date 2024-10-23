@@ -8,7 +8,6 @@ const Login = () => {
         password: ''
     })
     const navigate = useNavigate()
-
     const handleChanges = (e) => {
         setValues({...values, [e.target.name]:e.target.value})
     }
@@ -25,11 +24,12 @@ const Login = () => {
         }
     }
     return(
-        <div className="container">
+        <div className="container form">
                 <div className="row">
                     <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                        <div className="card border-1 shadow rounded-5 my-5">
-                            <div className="card-body p-4 p-sm-5">
+                        <div className="card border-1 shadow rounded-5 my-5 p-3 ">
+                            <Link to='/' className="close"><i className="bi bi-x-lg"></i></Link>
+                            <div className="card-body p-sm-5 ">
                                 <h2 className="card-title text-center mb-5 fw-light fs-5">Sign In</h2>
                                 <form onSubmit={handleSubmit}>
                                     <div className="mb-4">
@@ -44,7 +44,7 @@ const Login = () => {
                                     </div>
                                     <button type="submit" className="btn btn-success mb-4 w-100"><strong>Log in</strong></button>
                                     <div>
-                                        <Link to="/teamcode/singup" className='btn btn-default border w-100 text-decoration-none'>Create account</Link>
+                                        <Link to="/register" className='btn btn-default border w-100 text-decoration-none'>Create account</Link>
                                     </div>
                                 </form>
                             </div>

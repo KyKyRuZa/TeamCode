@@ -3,14 +3,13 @@ import Home from './pages/Home'
 import Register from './pages/Singup'
 import Login from './pages/Login'
 
-
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="teamcode/" element={<Home/>}></Route>
-        <Route path="teamcode/singup" element={<Register/>}></Route>
-        <Route path="teamcode/login" element={<Login/>}></Route>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
       </Routes>
     </BrowserRouter>
   )

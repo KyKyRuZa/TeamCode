@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import axios from 'axios'
+import './page.css'
 
 const Register = () => {
     const [values, setValues] = useState({
@@ -24,11 +25,12 @@ const Register = () => {
         }
     }
     return (
-        <div className="container">
+        <div className="container form">
                 <div className="row">
                     <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                        <div className="card border-1 shadow rounded-5 my-5">
-                            <div className="card-body p-4 p-sm-5">
+                        <div className="card border-1 shadow rounded-5 my-5 p-3">
+                        <Link to='/' className="close"><i className="bi bi-x-lg"></i></Link>
+                            <div className="card-body p-sm-5">
                                 <h2 className="card-title text-center mb-5 fw-light fs-5">Sign Up</h2>
                                     <form onSubmit={handleSubmit}>
                                         <div className="mb-4">
@@ -50,7 +52,7 @@ const Register = () => {
                                         </div>
                                         <button type="submit" className="btn btn-success mb-4 w-100"><strong>Sing Up</strong></button>
                                         <div>
-                                            <Link to="/teamcode/login" className='btn btn-default border w-100 text-decoration-none'>Login</Link>
+                                            <Link to="/login" className='btn btn-default border w-100 text-decoration-none'>Login</Link>
                                         </div>
                                     </form>
                             </div>
