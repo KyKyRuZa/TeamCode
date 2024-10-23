@@ -27,28 +27,28 @@ const navigate = useNavigate
     <><body>
          <nav className="navbar navbar-expand-lg p-md-3 sticky-top">
             <div className="container-fluid">
-                <Link to="/" className="navbar-brand text-white">TeamCode</Link>
+                <Link to="/teamcode/" className="navbar-brand text-white">TeamCode</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <Link to="/" className="nav-link text-white">Главная</Link>
+                        <Link to="/teamcode/" className="nav-link text-white">Главная</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link text-white">Поддержка</Link>
+                        <Link to="/teamcode/" className="nav-link text-white">Поддержка</Link>
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Каталог</a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><Link to="/" className="dropdown-item ">Webapp</Link></li>
-                            <li><Link to="/" className="dropdown-item ">Website</Link></li>
+                            <li><Link to="/teamcode/" className="dropdown-item ">Webapp</Link></li>
+                            <li><Link to="/teamcode/" className="dropdown-item ">Website</Link></li>
                         </ul>
                     </li>
                 </ul>
                 <form className="d-flex">
-                <Link to="/login" className='btn btn-default border w-100 text-decoration-none btn-lg text-white'>Вход</Link>
+                <Link to="teamcode/login" className='btn btn-default border w-100 text-decoration-none btn-lg text-white'>Вход</Link>
                 </form>
             </div>
             </div>
