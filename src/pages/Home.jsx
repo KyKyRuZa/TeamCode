@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import './page.css'
 
 const Home = () => {
 const navigate = useNavigate
@@ -52,6 +53,36 @@ const navigate = useNavigate
             </div>
             </div>
         </nav>
+        <main>
+            <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 ">
+                <div className="col-md-6 p-lg-5 mx-auto my-5">
+                    <h2 className="display-4 fw-bold text-white">Разработка ботов и вебсайтов для вашего бизнеса</h2>
+                    <h4 className="fw-normal mb-3 text-white">Мы - команда экспертов, которые помогают вашему бизнесу выйти на новый уровень через создание уникальных ботов и веб-сайтов</h4>
+                    <div className="d-flex gap-3 lead fw-normal">
+                        <Link className="btn btn-primary btn-lg">Заказать</Link>
+                        <Link className="btn btn-default border-primary btn-lg text-white">Узнать больше</Link>
+                    </div>
+                </div>
+                <div className="product-device shadow-sm d-none d-md-block"></div>
+                <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+            </div>
+            <section className="dark">Наши услуги
+                <div className="container d-flex py-4"> 
+                    <article className="postcard dark blue">
+                        <div className="postcard__text">
+                            <h1 className="postcard__title blue">Разработка ботов</h1>
+                            <div className="postcard__preview-txt">Создаем ботов для вашего бизнеса и улучшения взаимодействия с клиентами</div>
+                        </div>
+                    </article>
+                    <article className="postcard dark blue">
+                        <div className="postcard__text">
+                            <h1 className="postcard__title blue">Веб-дизайн</h1>
+                            <div className="postcard__preview-txt">Разрабатываем современные и функциональные веб-сайты, которые привлекают внимание и увеличивают продажи</div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
         </>
     )
 }
