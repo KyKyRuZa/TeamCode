@@ -28,9 +28,15 @@ const Register = () => {
         <div className="container form">
                 <div className="row">
                     <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
+<<<<<<< HEAD
                         <div className="card border-1 shadow rounded-5 my-5 p-3">
                         <Link to='/teamcode/' className="close"><i className="bi bi-x-lg"></i></Link>
                             <div className="card-body p-sm-5">
+=======
+                        <div className="card border-1 shadow rounded-5 my-5">
+                            <Link to='/' className="close"><i className="bi bi-x-lg"></i></Link>
+                            <div className="card-body p-4 p-sm-5">
+>>>>>>> 7babd442b08157502ebf67d5f4d285aafe9beaf9
                                 <h2 className="card-title text-center mb-5 fw-light fs-5">Sign Up</h2>
                                     <form onSubmit={handleSubmit}>
                                         <div className="mb-4">
