@@ -2,10 +2,6 @@ import axios from "axios"
 import { useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import './page.css'
-<<<<<<< HEAD
-=======
-
->>>>>>> 7babd442b08157502ebf67d5f4d285aafe9beaf9
 const Home = () => {
 const navigate = useNavigate
     const fetchUser = async () => {
@@ -87,12 +83,8 @@ const navigate = useNavigate
                 </div>
             </section>
         </main>
-<<<<<<< HEAD
     </body>       
     </>
-=======
-        </>
->>>>>>> 7babd442b08157502ebf67d5f4d285aafe9beaf9
     )
 }
 
