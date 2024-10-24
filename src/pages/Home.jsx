@@ -48,7 +48,7 @@ const navigate = useNavigate
                     </li>
                 </ul>
                 <form className="d-flex">
-                <Link to="teamcode/login" className='btn btn-default border w-100 text-decoration-none btn-lg text-white'>Вход</Link>
+                <Link to="/teamcode/login" className='btn btn-default border w-100 text-decoration-none btn-lg text-white'>Вход</Link>
                 </form>
             </div>
             </div>

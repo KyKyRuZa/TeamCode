@@ -44,7 +44,7 @@ const Login = () => {
                                     </div>
                                     <button type="submit" className="btn btn-success mb-4 w-100"><strong>Log in</strong></button>
                                     <div>
-                                        <Link to="teamcode/register" className='btn btn-default border w-100 text-decoration-none'>Create account</Link>
+                                        <Link to="/teamcode/register" className='btn btn-default border w-100 text-decoration-none'>Create account</Link>
                                     </div>
                                 </form>
                             </div>
